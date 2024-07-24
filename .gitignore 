@@ -1,0 +1,27 @@
+myenv/
+
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.env/
+
+# IDE/editor specific files
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Database files
+*.sqlite3
+
+common/__pycache__/
+coding_assistant/__pycache__/
+
