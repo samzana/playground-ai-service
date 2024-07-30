@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from coding_assistant.router import router as coding_assistant_router
+import uvicorn
 
 app = FastAPI()
 
@@ -20,3 +21,6 @@ app.add_middleware(
 )
 
 app.include_router(coding_assistant_router, prefix="/api", tags=["assistant"])
+
+if __name__ == "__main__":
+    uvicorn.run(app)
