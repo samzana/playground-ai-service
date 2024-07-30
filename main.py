@@ -22,5 +22,7 @@ app.add_middleware(
 
 app.include_router(coding_assistant_router, prefix="/api", tags=["assistant"])
 
+#push to vercel
 if __name__ == "__main__":
     uvicorn.run(app)
+
